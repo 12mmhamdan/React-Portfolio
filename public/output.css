@@ -527,6 +527,46 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 480px){
+  .container{
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 620px){
+  .container{
+    max-width: 620px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1060px){
+  .container{
+    max-width: 1060px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1700px){
+  .container{
+    max-width: 1700px;
+  }
+}
+
 .visible{
   visibility: visible;
 }
@@ -646,6 +686,18 @@ video {
   margin-top: 8rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.mt-48{
+  margin-top: 12rem;
+}
+
 .flex{
   display: flex;
 }
@@ -678,6 +730,14 @@ video {
   height: 8rem;
 }
 
+.h-\[350px\]{
+  height: 350px;
+}
+
+.max-h-\[400px\]{
+  max-height: 400px;
+}
+
 .w-5\/6{
   width: 83.333333%;
 }
@@ -704,6 +764,14 @@ video {
 
 .w-1\/3{
   width: 33.333333%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
+}
+
+.w-2\/5{
+  width: 40%;
 }
 
 .max-w-\[400px\]{
@@ -766,6 +834,10 @@ video {
   gap: 8rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -804,6 +876,11 @@ video {
   background-color: rgb(117 117 117 / var(--tw-bg-opacity));
 }
 
+.bg-grey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 237 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
 }
@@ -822,6 +899,14 @@ video {
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-16{
+  padding: 4rem;
 }
 
 .py-6{
@@ -880,6 +965,22 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-48{
+  padding-bottom: 12rem;
+}
+
+.pt-48{
+  padding-top: 12rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -922,6 +1023,11 @@ video {
   line-height: 1;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -947,6 +1053,10 @@ video {
 
 .placeholder-opaque-black::placeholder{
   color: rgba(0,0,0,0.35);
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .transition{
@@ -1016,9 +1126,24 @@ body,
   top: -2.5rem;
 }
 
+.before\:left-1\/2::before{
+  content: var(--tw-content);
+  left: 50%;
+}
+
+.before\:top-\[-120px\]::before{
+  content: var(--tw-content);
+  top: -120px;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
+}
+
+.before\:-ml-\[110px\]::before{
+  content: var(--tw-content);
+  margin-left: -110px;
 }
 
 .before\:h-6::before{
@@ -1074,6 +1199,21 @@ body,
   border-color: rgb(44 188 233 / var(--tw-border-opacity));
 }
 
+.before\:content-person1::before{
+  --tw-content: url('./assets/person-1.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person2::before{
+  --tw-content: url('./assets/person-2.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person3::before{
+  --tw-content: url('./assets/person-3.png');
+  content: var(--tw-content);
+}
+
 .hover\:bg-red:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(220 68 146 / var(--tw-bg-opacity));
@@ -1103,6 +1243,10 @@ body,
   opacity: 0.5;
 }
 
+.hover\:opacity-90:hover{
+  opacity: 0.9;
+}
+
 .hover\:saturate-200:hover{
   --tw-saturate: saturate(2);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1129,6 +1273,16 @@ body,
   .xs\:before\:content-brush::before{
     --tw-content: url('./assets/brush.png');
     content: var(--tw-content);
+  }
+}
+
+@media (min-width: 768px){
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -1161,6 +1315,10 @@ body,
     width: 75%;
   }
 
+  .md\:w-2\/5{
+    width: 40%;
+  }
+
   .md\:max-w-\[600px\]{
     max-width: 600px;
   }
@@ -1183,6 +1341,10 @@ body,
 
   .md\:gap-16{
     gap: 4rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-start{
